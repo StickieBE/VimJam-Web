@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Trust Seeker</title>
+  </head>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" style="width: 960px; height: 600px; background: #231F20"></canvas>
+    <script src="Build/webgl.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/webgl.data.gz",
+        frameworkUrl: "Build/webgl.framework.js.gz",
+        codeUrl: "Build/webgl.wasm.gz",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "2.5D Games",
+        productName: "Trust Seeker",
+        productVersion: "0.1",
+      });
+    </script>
+  </body>
+</html>
